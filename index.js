@@ -10,6 +10,14 @@ const PORT = process.env.PORT || 3000;
 
 const MONGO_URI = process.env.MONGO_URI;
 
+// --- AGREGA ESTO ---
+console.log("👀 MIREN TODOS, LA URI ES: [" + MONGO_URI + "]");
+// -------------------
+
+mongoose.connect(MONGO_URI);
+
+
+
 app.use(express.json());
 app.use(cors());
 
